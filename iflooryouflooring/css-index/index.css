@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    transition: all 0.3s ease;
+}
+
+/*======================*/
+body{
+    min-width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+header{
+    width:100vw;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: rgba(31, 30, 30, 0.445);
+    color: white;
+}
+.logo{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+}
+.contacthelp{
+    display: flex;
+    align-items: center;
+}
+/*===================================*/
+
+.container1{
+    width: 100vw;
+    height: 90vh;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    
+}
+.title1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+    margin-top:7rem;
+    font-size: 1.6rem;
+}
+.boxzipcode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxsearchzipcode{
+    width: 35rem;
+    height: 20rem;
+    background:white;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    display: flex;
+    justify-content: space-around;
+}
