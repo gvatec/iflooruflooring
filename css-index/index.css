@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    transition: all 0.3s ease;
+}
+
+/*======================*/
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width:100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: rgba(31, 30, 30, 0.445);
+    background-attachment: fixed;
+    position: fixed;
+    color: white;
+}
+.logo{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+}
+.contacthelp{
+    display: flex;
+    align-items: center;
+}
+/*===================================*/
+.mainbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 8rem;
+}
+.container1{
+    width:100%;
+    height: 100vh;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+.title1{
+    text-align: center;
+    color:white;
+    margin-top: 30px;
+}
+.boxzipcode{
+    width: 20rem;
+    height: 100%;
+    padding:2rem;
+    border-radius: 5px;
+    background:white;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px black;
+    transition-duration: 0.3s;
+}
+.boxzipcode button:hover{
+   margin: 5px;
+}
+.input{
+    display: flex;
+    justify-content: space-around;
+}
+/*======================================*/
+
+/*container2*/
+.container2{
+    width:100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.container2 .title{
+    width:100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerbtns{
+    width:100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+}
+.containerbtns  a{
+   text-decoration: none;
+   color: black;
+}
+.containerbtns  a:hover{
+    text-decoration:underline;
+}
+
+.boxbtn1{
+    width: 50vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+}
+.boxbtn2{
+    width: 50vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+}
+/*=========================================*/
+.title2{
+    width:100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerbtns2{
+    width:100%;
+    height: 36vh;
+    display: flex;
+    flex-direction: row;
+}
+.containerbtns2  a{
+    text-decoration: none;
+    color: black;
+ }
+ .containerbtns2  a:hover{
+     text-decoration:underline;
+ }
+.boxbtn3{
+    width: 50vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+}
+.boxbtn4{
+    width: 50vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+}
+/*FIM DO CONTAINER 2*/
+/*===========================================*/
+
+/*container 3*/
+/*=========================================*/
+
+.container3{
+    width:100%;
+    height: 80vh;
+    display: flex;
+    background: #F9F9F7;
+}
+.boxtext1{
+    width: 50vw;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.boxtext2{
+    width: 50vw;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.formulario{
+    width: 28vw;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 3px;
+}
+.formulario a{
+    text-decoration: none;
+    background-color: #34ca37;
+    padding: 1rem;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition-duration: 0.3s;
+}
+.formulario a:hover{
+    background-color: #1c961e;
+    
+}
+
+
+
+
+
+/*Resposividade*/
+@media(max-width:900px){
+header h2{
+    font-size: 13px;
+}
+.mainbox h1{
+font-size: 17px;
+}
+.mainbox h2{
+    font-size: 13px;
+}
+}
+@media(max-width:600px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+    }
+    .container1{
+        background-size: 100%;
+    }
+    .boxzipcode{
+        padding: 0.7rem;
+    }
+}
