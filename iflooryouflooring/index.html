@@ -40,24 +40,13 @@ tecwebcod developers
                 <h2>Also see ratings, reviews, job pictures and more!</h2>
             </div>
             <div class="boxzipcode">
-                <p style="color: grey;">Enter your zip code to start</p>
-                <form action="" method="get">
-                    <div style="margin-top:15px ;" class="btninput">
-                        <fieldset
-                            style="border-radius: 5px; padding-left: 30px;padding-bottom: 2px;padding-right: 2px;">
-                            <legend>
-                                <p>ZIP Code</p>
-                            </legend>
-                            <input style="border: none;outline: none; width: 70px;
-                         height: 40px;" type="text" name="zipcode" id="zipcode" required>
-                            <button style="margin-left: -5px;border: none;border-radius: 5px; cursor: pointer;width: 90px;height:40px;
-                          background-color: rgb(58, 179, 58);color: white; font-size: 15px; font-weight: 700;"
-                                type="submit">Search</button>
-                        </fieldset>
-                    </div>
+                <form id="zipcode_1" method="post" action="http://pt.zipcodecountry.com/zipcode.php" target="_blank">
+                   <input type="text" name="zipcode_country" value="USA">
+                   <input type="submit" value="pesquisar">
                 </form>
             </div>
         </div>
+    </div>
     </div>
     <div class="container2">
         <div class="title">
@@ -131,7 +120,8 @@ tecwebcod developers
                     save. <br><br>
                     No project is too big or too small for our network of flooring <br> specialists.
                     We'll help make the process easy by finding just <br> the right professional for your project.
-                    Search your zip code <br> to get started.</p>
+                    Search your zip code <br> to get started.
+                </p>
             </div>
             <div class="formulario">
                 <p>Are you ready to start your project?</p>
