@@ -69,7 +69,7 @@
     <div class="container">
         <h2>Do you have any additional project details to add?</h2>
           <p>(Optional)</p><br><br>
-          <form style="display:flex; flex-direction:column;align-items:center;" action="" method="post">
+          <form style="display:flex; flex-direction:column;align-items:center;" action="question1.php" method="post">
           <textarea name="" id="" cols="30" rows="10" placeholder="Describe your project  in more detail.This helps your pros provide you wiht more accurate quotes."></textarea>
               <button type="submit">Next <img src="https://img.icons8.com/ios-filled/50/ffffff/chevron-right.png"/></button>
           </form>

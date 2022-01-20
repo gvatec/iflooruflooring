@@ -40,9 +40,13 @@ tecwebcod developers
                 <h2>Also see ratings, reviews, job pictures and more!</h2>
             </div>
             <div class="boxzipcode">
+                Enter your zip code to start.
                 <form id="zipcode_1" method="post" action="http://pt.zipcodecountry.com/zipcode.php" target="_blank">
-                   <input type="text" name="zipcode_country" value="USA">
-                   <input type="submit" value="pesquisar">
+                    <div style="border:2px solid darkred;border-radius:10px 10px 10px 10px;padding:3px;
+" class="inputs">
+                        <input type="text" name="zipcode_country" id="zipcode" value="USA">
+                        <input type="submit" value="Search">
+                    </div>
                 </form>
             </div>
         </div>
