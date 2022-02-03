@@ -59,7 +59,7 @@ tecwebcod developers
         <div class="containerbtns">
             <div class="boxbtn1">
 
-                <a href="pergunta1.php">Refinish Hardwoord Flooring</a><br><br>
+                <a href="./questionario1/perg1.php">Refinish Hardwoord Flooring</a><br><br>
                 <a href="">Install or Replace Hardwoord Flooring</a><br><br>
                 <a href="">Repair Hardwoord Flooring</a>
             </div>
