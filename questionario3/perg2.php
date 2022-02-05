@@ -1,11 +1,10 @@
 <?php
+if(isset($_POST['submitperg2'])){
+    header('Location: perg3.php');
+}
 
-   if(isset($_POST['submitperg4'])){
-       header('Location: perg5.php');
-   }
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IflooruFlooring</title>
     <style>
-                        *{
+        *{
             font-family: 'poppins',sans-serif;
             transition:all 0.5s ease;
 
@@ -79,11 +78,11 @@
             align-items:center;
             font-size:1.2rem;
             font-weight:600;
+
         }
         .radio2{
             border:1px solid #DADADA;
             margin-top:10px;
-            margin-bottom:10px;
             height:45px;
             width:35rem;
             display:flex;
@@ -97,34 +96,29 @@
 <body>
     <header>
         <div class="title">
-            <h2>What is your timeframe?</h2>
+            <h2>Select the type of wood flooring you would like to install:</h2>
         </div>
     </header>
-    <form action="perg4.php" method="post">
+    <form action="perg2.php" method="post">
         <div class="inputsradio">
             <div class="radio1">
-                <input type="radio" name="perg4" id="option1">
-                <label for="option1">Timing is flexible</label>
+                <input type="radio" name="perg2" id="option1">
+                <label for="option1">Natural wood</label>
             </div>
             <div class="radio2">
-                <input type="radio" name="perg4" id="option2">
-                <label for="option2">Within 1 week</label>
-            </div>
-            <div class="radio1">
-                <input type="radio" name="perg4" id="option3">
-                <label for="option3">1 - 2 weeks</label>
+                <input type="radio" name="perg2" id="option2">
+                <label for="option2">Wood laminate</label>
             </div>
             <div class="radio2">
-                <input type="radio" name="perg4" id="option4">
-                <label for="option4">More than 2 weeks</label>
+                <input type="radio" name="perg2" id="option3">
+                <label for="option3">Want recommendation</label>
             </div>
 
         </div>
         <div class="btn">
-        <a href="perg3.php"><img style="width:30px; height:30px;" src="https://img.icons8.com/ios-filled/50/000000/less-than.png"/>Back</a>
-        <button type="submit" name="submitperg4" id="submitperg4">Next <img src="https://img.icons8.com/ios-glyphs/30/ffffff/chevron-right.png"/></button>
+        <a href="perg1.php"><img style="width:30px; height:30px;" src="https://img.icons8.com/ios-filled/50/000000/less-than.png"/>Back</a>
+        <button type="submit" name="submitperg2" id="submitperg2">Next <img src="https://img.icons8.com/ios-glyphs/30/ffffff/chevron-right.png"/></button>
         </div>
     </form>
-
 </body>
 </html>

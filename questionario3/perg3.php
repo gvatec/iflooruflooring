@@ -1,9 +1,7 @@
 <?php
-
-   if(isset($_POST['submitperg5'])){
-       header('Location: perg6.php');
-   }
-
+if(isset($_POST['submittxt'])){
+    header('Location: perg4.php');
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,12 +9,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iflooruIflooring</title>
+    <title>Iflooruflooring</title>
     <style>
-                *{
+        *{
             font-family: 'poppins',sans-serif;
             transition:all 0.5s ease;
-
         }
         body{
             display:flex;
@@ -24,12 +21,14 @@
             align-items:center;
             justify-content:center;
             transition:all 0.5s ease;
-
+        }
+        .title{
+            text-align:center;
         }
         .btn{
             display:flex;
             align-items:center;
-            justify-content:center;
+            justify-content:space-around;
             margin-top:2rem;
         }
         .btn button{
@@ -68,57 +67,30 @@
         .btn a:hover{
             background-color:#A7A9AC;
         }
-/* ================================================ */
-        
-        .radio1{
-            border:1px solid #DADADA;
-            height:45px;
-            width:35rem;
-            display:flex;
-            align-items:center;
-            font-size:1.2rem;
-            font-weight:600;
-            margin-bottom:10px;
+        textarea[placeholder]{
+            font-size:20px;
+            padding:5px;
         }
-        .radio2{
-            border:1px solid #DADADA;
-            margin-top:10px;
-            height:45px;
-            width:35rem;
-            display:flex;
-            align-items:center;
-            font-size:1.2rem;
-            font-weight:600;
+        textarea{
+            border-color:grey;
         }
-
     </style>
-
 </head>
 <body>
-<header>
+    <header>
         <div class="title">
-            <h2>Are you the owner?</h2>
+            <h2>Do you have any additional project details to add?</h2>
+            <p>(Optional)</p>
         </div>
     </header>
-    <form action="perg5.php" method="post">
-        <div class="inputsradio">
-            <div class="radio1">
-                <input type="radio" name="perg5" id="yes">
-                <label for="yes">Yes</label>
-            </div>
-            <div class="radio1">
-                <input type="radio" name="perg5" id="option2">
-                <label for="option2">No, but authorized to make changes</label>
-            </div>
-
-            <div class="radio2">
-                <input type="radio" name="perg5" id="no">
-                <label for="no">No</label>
-            </div>
+    <form action="perg3.php" method="post">
+        <div class="textarea">
+            <textarea placeholder="Describe your project in more detail. This helps your pros provide you with more accurate quotes." 
+            name="text" id="text" cols="55" rows="5"></textarea>
         </div>
         <div class="btn">
-        <a href="perg4.php"><img style="width:30px; height:30px;" src="https://img.icons8.com/ios-filled/50/000000/less-than.png"/>Back</a>
-        <button type="submit" name="submitperg5" id="submitperg5">Next <img src="https://img.icons8.com/ios-glyphs/30/ffffff/chevron-right.png"/></button>
+        <a href="perg2.php"><img style="width:30px; height:30px;" src="https://img.icons8.com/ios-filled/50/000000/less-than.png"/>Back</a>
+            <button type="submit" name="submittxt" id="submittxt">Next <img src="https://img.icons8.com/ios-glyphs/30/ffffff/chevron-right.png"/></button>
         </div>
     </form>
 </body>

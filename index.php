@@ -60,13 +60,13 @@ tecwebcod developers
             <div class="boxbtn1">
 
                 <a href="./questionario1/perg1.php">Refinish Hardwoord Flooring</a><br><br>
-                <a href="">Install or Replace Hardwoord Flooring</a><br><br>
-                <a href="">Repair Hardwoord Flooring</a>
+                <a href="./questionario3/perg1.php">Install or Replace Hardwoord Flooring</a><br><br>
+                <a href="./questionario4/perg1.php">Repair Hardwoord Flooring</a>
             </div>
             <div class="boxbtn2">
-                <a href="">Install or Replace Laminate Flooring</a> <br><br>
-                <a href="">Install or Replace Carpet</a><br><br>
-                <a href="">Install or Replace Vinyl/Linoleum Flooring</a>
+                <a href="./questionario5/perg1.php">Install or Replace Laminate Flooring</a> <br><br>
+                <a href="./questionario2/perg1.php">Install or Replace Carpet</a><br><br>
+                <a href="./questionario6/perg1.php">Install or Replace Vinyl/Linoleum Flooring</a>
             </div>
         </div>
         <div class="title2">

@@ -1,8 +1,7 @@
 <?php
-
-   if(isset($_POST['submitperg4'])){
-       header('Location: perg5.php');
-   }
+if(isset($_POST['submitperg3'])){
+    header('Location: perg7.php');
+}
 
 ?>
 
@@ -11,10 +10,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IflooruFlooring</title>
+    <meta name="viewport" content="">
     <style>
-                        *{
+                *{
             font-family: 'poppins',sans-serif;
             transition:all 0.5s ease;
 
@@ -79,11 +77,11 @@
             align-items:center;
             font-size:1.2rem;
             font-weight:600;
+
         }
         .radio2{
             border:1px solid #DADADA;
             margin-top:10px;
-            margin-bottom:10px;
             height:45px;
             width:35rem;
             display:flex;
@@ -95,34 +93,25 @@
     </style>
 </head>
 <body>
-    <header>
+<header>
         <div class="title">
-            <h2>What is your timeframe?</h2>
+            <h2>Are you the owner?</h2>
         </div>
     </header>
-    <form action="perg4.php" method="post">
+    <form action="perg6.php" method="post">
         <div class="inputsradio">
             <div class="radio1">
-                <input type="radio" name="perg4" id="option1">
-                <label for="option1">Timing is flexible</label>
+                <input type="radio" name="perg3" id="yes">
+                <label for="yes">Yes</label>
             </div>
             <div class="radio2">
-                <input type="radio" name="perg4" id="option2">
-                <label for="option2">Within 1 week</label>
+                <input type="radio" name="perg3" id="no">
+                <label for="no">No</label>
             </div>
-            <div class="radio1">
-                <input type="radio" name="perg4" id="option3">
-                <label for="option3">1 - 2 weeks</label>
-            </div>
-            <div class="radio2">
-                <input type="radio" name="perg4" id="option4">
-                <label for="option4">More than 2 weeks</label>
-            </div>
-
         </div>
         <div class="btn">
-        <a href="perg3.php"><img style="width:30px; height:30px;" src="https://img.icons8.com/ios-filled/50/000000/less-than.png"/>Back</a>
-        <button type="submit" name="submitperg4" id="submitperg4">Next <img src="https://img.icons8.com/ios-glyphs/30/ffffff/chevron-right.png"/></button>
+        <a href="perg5.php"><img style="width:30px; height:30px;" src="https://img.icons8.com/ios-filled/50/000000/less-than.png"/>Back</a>
+        <button type="submit" name="submitperg3" id="submitperg3">Next <img src="https://img.icons8.com/ios-glyphs/30/ffffff/chevron-right.png"/></button>
         </div>
     </form>
 
