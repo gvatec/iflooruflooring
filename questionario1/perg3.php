@@ -1,20 +1,18 @@
 <?php
-if(isset($_POST['submittxt'])){
-    header('Location: perg2.php');
+if(isset($_POST['submitperg3'])){
+    header('Location: perg4.php');
 }
-if(isset($_POST['submitback'])){
-    header('Location: ../index.php');
-}
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iflooruflooring</title>
+    <meta name="viewport" content="">
     <style>
-        *{
+                *{
             font-family: 'poppins',sans-serif;
 
         }
@@ -24,13 +22,10 @@ if(isset($_POST['submitback'])){
             align-items:center;
             justify-content:center;
         }
-        .title{
-            text-align:center;
-        }
         .btn{
             display:flex;
             align-items:center;
-            justify-content:space-around;
+            justify-content:center;
             margin-top:2rem;
         }
         .btn button{
@@ -51,7 +46,7 @@ if(isset($_POST['submitback'])){
         .btn button:hover{
             background-color:#02A606;
         }
-        .btn button[id="submitback"]{
+        .btn a{
             width:13rem;
             height:50px;
             color:#515151;
@@ -66,34 +61,56 @@ if(isset($_POST['submitback'])){
             justify-content:center;
             transition-duration:0.4s;
         }
-        .btn button[id="submitback"]:hover{
+        .btn a:hover{
             background-color:#A7A9AC;
         }
-        textarea[placeholder]{
-            font-size:20px;
-            padding:5px;
+/* ================================================ */
+        
+        .radio1{
+            border:1px solid #DADADA;
+            height:45px;
+            width:35rem;
+            display:flex;
+            align-items:center;
+            font-size:1.2rem;
+            font-weight:600;
+
         }
-        textarea{
-            border-color:grey;
+        .radio2{
+            border:1px solid #DADADA;
+            margin-top:10px;
+            height:45px;
+            width:35rem;
+            display:flex;
+            align-items:center;
+            font-size:1.2rem;
+            font-weight:600;
         }
+
     </style>
 </head>
 <body>
-    <header>
+<header>
         <div class="title">
-            <h2>Do you have any additional project details to add?</h2>
-            <p>(Optional)</p>
+            <h2>Have you already purchased the materials for this project?</h2>
         </div>
     </header>
-    <form action="perg1.php" method="post">
-        <div class="textarea">
-            <textarea placeholder="Describe your project in more detail. This helps your pros provide you with more accurate quotes." 
-            name="text" id="text" cols="55" rows="5"></textarea>
+    <form action="perg3.php" method="post">
+        <div class="inputsradio">
+            <div class="radio1">
+                <input type="radio" name="perg3" id="yes">
+                <label for="yes">Yes</label>
+            </div>
+            <div class="radio2">
+                <input type="radio" name="perg3" id="no">
+                <label for="no">No</label>
+            </div>
         </div>
         <div class="btn">
-        <button type="submit" name="submitback" id="submitback"><img style="width:30px; height:30px;" src="https://img.icons8.com/ios-filled/50/000000/less-than.png"/>Back</a></button>
-            <button type="submit" name="submittxt" id="submittxt">Next <img src="https://img.icons8.com/ios-glyphs/30/ffffff/chevron-right.png"/></button>
+        <a href="perg2.php"><img style="width:30px; height:30px;" src="https://img.icons8.com/ios-filled/50/000000/less-than.png"/>Back</a>
+        <button type="submit" name="submitperg3" id="submitperg3">Next <img src="https://img.icons8.com/ios-glyphs/30/ffffff/chevron-right.png"/></button>
         </div>
     </form>
+
 </body>
 </html>
