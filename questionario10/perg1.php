@@ -1,6 +1,9 @@
 <?php
 if(isset($_POST['submittxt'])){
-    header('Location: perg3.php');
+    header('Location: perg2.php');
+}
+if(isset($_POST['submitback'])){
+    header('Location: ../index.php');
 }
 ?>
 <!DOCTYPE html>
@@ -49,7 +52,7 @@ if(isset($_POST['submittxt'])){
         .btn button:hover{
             background-color:#02A606;
         }
-        .btn a{
+        .btn button[id="submitback"]{
             width:13rem;
             height:50px;
             color:#515151;
@@ -64,7 +67,7 @@ if(isset($_POST['submittxt'])){
             justify-content:center;
             transition-duration:0.4s;
         }
-        .btn a:hover{
+        .btn button[id="submitback"]:hover{
             background-color:#A7A9AC;
         }
         textarea[placeholder]{
@@ -83,13 +86,13 @@ if(isset($_POST['submittxt'])){
             <p>(Optional)</p>
         </div>
     </header>
-    <form action="perg2.php" method="post">
+    <form action="perg1.php" method="post">
         <div class="textarea">
             <textarea placeholder="Describe your project in more detail. This helps your pros provide you with more accurate quotes." 
             name="text" id="text" cols="55" rows="5"></textarea>
         </div>
         <div class="btn">
-        <a href="perg1.php"><img style="width:30px; height:30px;" src="https://img.icons8.com/ios-filled/50/000000/less-than.png"/>Back</a>
+        <button type="submit" name="submitback" id="submitback"><img style="width:30px; height:30px;" src="https://img.icons8.com/ios-filled/50/000000/less-than.png"/>Back</a></button>
             <button type="submit" name="submittxt" id="submittxt">Next <img src="https://img.icons8.com/ios-glyphs/30/ffffff/chevron-right.png"/></button>
         </div>
     </form>

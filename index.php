@@ -74,14 +74,14 @@ tecwebcod developers
         </div>
         <div class="containerbtns2">
             <div class="boxbtn3">
-                <a href="">Install or Replace Title Flooring</a><br><br>
-                <a href="">Reapair Carpet</a><br><br>
-                <a href="">Repair Vinyl/Linoleum Flooring</a>
+                <a href="./questionario7/perg1.php">Install or Replace Title Flooring</a><br><br>
+                <a href="./questionario8/perg1.php">Reapair Carpet</a><br><br>
+                <a href="./questionario9/perg1.php">Repair Vinyl/Linoleum Flooring</a>
             </div>
             <div class="boxbtn4">
-                <a href="">Reapair Laminate Flooring</a> <br><br>
-                <a href="">Repair Title Flooring</a><br><br>
-                <a href="">View All Projects</a>
+                <a href="./questionario10/perg1.php">Reapair Laminate Flooring</a> <br><br>
+                <a href="./questionario11/perg1.php">Repair Title Flooring</a><br><br>
+                <a href="./questionario12/perg1.php">View All Projects</a>
             </div>
         </div>
     </div>
