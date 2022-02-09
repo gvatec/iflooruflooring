@@ -57,7 +57,7 @@ if(isset($_get['zipcode'])){
                 <form id="zipcode_1" method="get" action="" target="_blank">
                     <div style="border:2px solid darkred;border-radius:10px 10px 10px 10px;padding:3px;
 " class="inputs">
-                        <input placeholder="USA" type="text" name="zipcode_country" id="zipcode" value="">
+                        <input placeholder="USA" type="text" name="zipcode_country" id="zipcode" value="" required>
                         <input type="submit"name="zipcode" id="zipcode" value="Search">
                     </div>
                 </form>

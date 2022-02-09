@@ -75,7 +75,7 @@ if(isset($_POST['submitperg6'])){
             <h2>What's the project address?</h2>
         </div>
     </header>
-    <form action="perg6.php" method="get">
+    <form action="perg6.php" method="post">
         <div class="zipcode">
         <img src="https://img.icons8.com/material-sharp/48/4a90e2/region-code.png"/>  
          <input placeholder="Street address" type="text" name="zipcode" id="zipcode">
