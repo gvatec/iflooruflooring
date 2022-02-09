@@ -7,6 +7,19 @@ tecwebcod developers
 *********************
 -->
 
+<?php
+
+if(isset($_get['zipcode'])){
+      
+
+
+    header('Location: ./questionario12/perg1.php');
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +36,7 @@ tecwebcod developers
         <header>
             <div class="logo">
                 <a href="index.html">
-                    <img style="width: 200px;height: 70px;" src="./img/logotipo.png" alt="logo">
+                    <img style="width: 150px;height: 50px;" src="./img/logotipo.png" alt="logo">
                 </a>
                 <div style="margin-left: 1rem;" class="text1">
                     <h2 style="font-size: 1.2rem;">We find & connect you with local pros.</h2>
@@ -41,11 +54,11 @@ tecwebcod developers
             </div>
             <div class="boxzipcode">
                 Enter your zip code to start.
-                <form id="zipcode_1" method="post" action="http://pt.zipcodecountry.com/zipcode.php" target="_blank">
+                <form id="zipcode_1" method="get" action="" target="_blank">
                     <div style="border:2px solid darkred;border-radius:10px 10px 10px 10px;padding:3px;
 " class="inputs">
-                        <input type="text" name="zipcode_country" id="zipcode" value="USA">
-                        <input type="submit" value="Search">
+                        <input placeholder="USA" type="text" name="zipcode_country" id="zipcode" value="">
+                        <input type="submit"name="zipcode" id="zipcode" value="Search">
                     </div>
                 </form>
             </div>
@@ -129,7 +142,7 @@ tecwebcod developers
             </div>
             <div class="formulario">
                 <p>Are you ready to start your project?</p>
-                <a href="pagina de formulario">Talk To flooring Pros Today</a>
+                <a href="./questionario12/perg1.php">Talk To flooring Pros Today</a>
             </div>
         </div>
     </div>
