@@ -1,7 +1,7 @@
 <?php
 
    if(isset($_POST['submitperg4'])){
-       header('Location: perg2.php');
+       header('Location: perg4.php');
    }
 
 ?>
@@ -97,27 +97,24 @@
 <body>
     <header>
         <div class="title">
-            <h2>What type of flooring project is this?</h2>
+            <h2>
+Have you already purchased the carpet for this project?</h2>
         </div>
     </header>
-    <form action="perg1.php" method="post">
+    <form action="perg3.php" method="post">
         <div class="inputsradio">
             <div class="radio1">
                 <input type="radio" name="perg4" id="option1">
-                <label for="option1">Install or Replace flooring</label>
+                <label for="option1">Yes</label>
             </div>
             <div class="radio2">
                 <input type="radio" name="perg4" id="option2">
-                <label for="option2">Repair existing flooring</label>
-            </div>
-            <div class="radio1">
-                <input type="radio" name="perg4" id="option3">
-                <label for="option3">Refinish existing wood flooring</label>
+                <label for="option2">No</label>
             </div>
 
         </div>
         <div class="btn">
-        <a href="../index.php"><img style="width:30px; height:30px;" src="https://img.icons8.com/ios-filled/50/000000/less-than.png"/>Back</a>
+        <a href="perg2.php"><img style="width:30px; height:30px;" src="https://img.icons8.com/ios-filled/50/000000/less-than.png"/>Back</a>
         <button type="submit" name="submitperg4" id="submitperg4">Next <img src="https://img.icons8.com/ios-glyphs/30/ffffff/chevron-right.png"/></button>
         </div>
     </form>
