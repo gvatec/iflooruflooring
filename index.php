@@ -53,12 +53,14 @@ if(isset($_get['zipcode'])){
                 <h2>Also see ratings, reviews, job pictures and more!</h2>
             </div>
             <div class="boxzipcode">
-                Enter your zip code to start.
+                <h2 style="font-size:17px;">Enter your zip code to start.</h2>
                 <form id="zipcode_1" method="get" action="" target="_blank">
-                    <div style="border:2px solid darkred;border-radius:10px 10px 10px 10px;padding:3px;
-" class="inputs">
-                        <input placeholder="USA" type="text" name="zipcode_country" id="zipcode" value="" required>
-                        <input type="submit"name="zipcode" id="zipcode" value="Search">
+                    <div class="inputs">
+                        <fieldset style="padding:0px 10px 10px 0px;border-radius:20px;">
+                            <legend style="display:flex;align-items:center;"><img style="width:35px;" src="https://img.icons8.com/material-sharp/48/4a90e2/region-code.png"/>Zip code</legend>
+                            <input placeholder="USA" type="text" name="zipcode_country" id="zipcode" value="" required>
+                            <input type="submit"name="zipcode" id="zipcode" value="Search">
+                        </fieldset>
                     </div>
                 </form>
             </div>

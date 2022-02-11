@@ -56,9 +56,8 @@ header{
 }
 .boxzipcode{
     width: auto;
-    height: 100%;
+    height: 240px;
     padding:2rem;
-    border-radius: 5px;
     background:white;
     color: grey;
     margin-top: 2.5rem;
