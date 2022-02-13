@@ -1,0 +1,50 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins'sans-serif;
+    color: white;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: 105%;
+}
+.container{
+    width: 60vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5rem;
+    background-color: rgba(0, 0, 0, 0.562);
+    border-radius: 5px;
+}
+.logo{
+    width:30vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.boxlogin{
+    width:30vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputs{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
