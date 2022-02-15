@@ -1,3 +1,18 @@
+<?php
+   
+   if(isset($_POST['entrar'])){
+
+
+
+    header('Location: iflooring_gerencer.php')
+   }
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,12 +30,20 @@
         <div class="boxlogin">
             <header>
              <h1>Login</h1>   
-            </header>
-            <div class="inputs">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email">
-                    <label for="senha">Password</label>
-                    <input type="password" name="senha" id="senha">
+            </header><br><br>
+            <div class="form">
+                <form action="" method="post">
+                <div class="forminput">
+                   <input type="email" name="email" id="email" class="form_input" autocomplete="off"placeholder=""requerid>
+                   <label for="email"class="form_label">E-mail</label>
+                   <br><br><br>
+                    <input type="password" name="senha" id="senha"class="form_senha"placeholder="" requerid>
+                    <label for="senha"class="form_label">Senha</label>
+                </div>
+                <div class="submit">
+                    <button type="submit" name="entrar" id="entrar">Entrar</button>      
+                </div>
+            </form>
             </div>
         </div>
     </div>
