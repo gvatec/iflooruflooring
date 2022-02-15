@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-top: 4rem;
+}
+.btns button{
+    width: 30rem;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #20458a;
+    font-size: 20px;
+}
+
+.mainbox{
+    width: 90%;
+    height: 360px;
+    border: 1px solid grey;
+    margin-top: 10px;
+}

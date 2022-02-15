@@ -1,5 +1,18 @@
 <?php
+ 
+ if(isset($_POST['finishsubmit'])){
 
+
+     include_once('Database_config.php');
+
+    $nome = $_POST['name'];
+    $email = $_POST['email'];
+    $telefone = $_POST['tel'];
+    
+    $resultado = mysqli_query($conecxao, "INSERT INTO orcamentos_dadosclientes(nome,email,telefone) VALUES
+    ('$nome', '$email','$telefone')");
+
+ }
 
 ?>
 

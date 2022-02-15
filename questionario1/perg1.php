@@ -1,5 +1,8 @@
 <?php
 if(isset($_POST['submittxt'])){
+
+     
+
     header('Location: perg2.php');
 }
 if(isset($_POST['submitback'])){

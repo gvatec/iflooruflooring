@@ -59,6 +59,7 @@ background: none;
 padding: 17px;
 text-align: center;
 border: 1px solid grey;
+font-size: 20px;
 }
     
 .forminput input:focus ~ label{

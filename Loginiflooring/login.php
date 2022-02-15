@@ -17,12 +17,12 @@
              <h1>Login</h1>   
             </header><br><br>
             <div class="form">
-                <form action="../testelogin.js" method="post">
+                <form action="../testelogin.php" method="post">
                 <div class="forminput">
-                   <input type="email" name="email" id="email" class="form_input" autocomplete="off"placeholder=""requerid>
+                   <input type="email" name="email" id="email" class="form_input" placeholder=""required>
                    <label for="email"class="form_label">E-mail</label>
                    <br><br><br>
-                    <input type="password" name="senha" id="senha"class="form_senha"placeholder="" requerid>
+                    <input type="password" name="senha" id="senha"class="form_senha"placeholder="" required>
                     <label for="senha"class="form_label">Senha</label>
                 </div>
                 <div class="submit">
@@ -32,6 +32,5 @@
             </div>
         </div>
     </div>
-    <script src="testelogin.js"></script>
 </body>
 </html>

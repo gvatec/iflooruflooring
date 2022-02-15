@@ -1,9 +1,15 @@
 <?php
+  $dbHost = '127.0.0.1';
+  $dbUsername = 'root';
+  $dbPassword = '';
+  $dbName = 'testeiflooring';
   
-  $dbname = '';
-  $dbhost = '';
-  $dbpassword ='';
+  $conecxao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
 
-  $conecxao = newMsqli
+  // if($conecxao -> connect_errno){
+  //   echo"erro";
+  // }else{
+  //   echo"conectado";
+  // };
 
 ?>
