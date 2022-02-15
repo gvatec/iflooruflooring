@@ -1,18 +1,3 @@
-<?php
-   
-   if(isset($_POST['entrar'])){
-
-
-
-    header('Location: iflooring_gerencer.php')
-   }
-
-?>
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +17,7 @@
              <h1>Login</h1>   
             </header><br><br>
             <div class="form">
-                <form action="" method="post">
+                <form action="../testelogin.js" method="post">
                 <div class="forminput">
                    <input type="email" name="email" id="email" class="form_input" autocomplete="off"placeholder=""requerid>
                    <label for="email"class="form_label">E-mail</label>
@@ -47,5 +32,6 @@
             </div>
         </div>
     </div>
+    <script src="testelogin.js"></script>
 </body>
 </html>
