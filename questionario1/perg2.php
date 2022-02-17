@@ -102,11 +102,11 @@ if(isset($_POST['submitperg2'])){
     <form action="perg2.php" method="post">
         <div class="inputsradio">
             <div class="radio1">
-                <input type="radio" name="perg2" id="homeresidence">
+                <input type="radio" name="perg2" id="homeresidence" value="home/Residence">
                 <label for="homeresidence">Home/Residence</label>
             </div>
             <div class="radio2">
-                <input type="radio" name="perg2" id="business">
+                <input type="radio" name="perg2" id="business" value="Business">
                 <label for="business">Business</label>
             </div>
         </div>
