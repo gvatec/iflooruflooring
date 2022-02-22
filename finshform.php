@@ -2,15 +2,13 @@
  
  if(isset($_POST['finishsubmit'])){
 
-
      include_once('Database_config.php');
-
-    $nome = $_POST['name'];
+    $name = $_POST['name'];
     $email = $_POST['email'];
-    $telefone = $_POST['tel'];
+    $tel = $_POST['tel'];
     
-    $resultado = mysqli_query($conecxao, "INSERT INTO orcamentos_dadosclientes(nome,email,telefone) VALUES
-    ('$nome', '$email','$telefone')");
+    $resultado = mysqli_query($conecxao, "INSERT INTO formfinal(nome,email,telefone) VALUES
+    ('$name', '$email','$tel')");
 
  }
 
@@ -89,7 +87,6 @@
         </div>  
     </header>
     <div class="form">
-        <form action="finshform.php" method="post">
             <div class="input1">
             <img style="width:30px;height:30px;" src="https://img.icons8.com/ios-filled/50/4a90e2/user.png"/>
                 <input placeholder="First and last name" type="text" name="name" id="name">
@@ -106,7 +103,6 @@
              <div class="btn">
                  <button type="submit"name="finishsubmit"id="finishsubmit">See Your Matches<img src="https://img.icons8.com/ios-glyphs/30/ffffff/chevron-right.png"/></button>
              </div>
-        </form><br>
     </div>
     <div style="font-size:18px;text-align:center;" class="text">
         Estimates are <strong>free</strong>with <strong>no obligation</strong>to hire pro. <br><br><br>

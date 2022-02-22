@@ -75,13 +75,13 @@ if(isset($_get['zipcode'])){
             <div class="boxbtn1">
 
                 <a href="./questionario1/perg1.php">Refinish Hardwoord Flooring</a><br><br>
-                <a href="./questionario3/perg1.php">Install or Replace Hardwoord Flooring</a><br><br>
-                <a href="./questionario4/perg1.php">Repair Hardwoord Flooring</a>
+                <a href="./questionario1/perg1.php">Install or Replace Hardwoord Flooring</a><br><br>
+                <a href="./questionario1/perg1.php">Repair Hardwoord Flooring</a>
             </div>
             <div class="boxbtn2">
-                <a href="./questionario5/perg1.php">Install or Replace Laminate Flooring</a> <br><br>
-                <a href="./questionario2/perg1.php">Install or Replace Carpet</a><br><br>
-                <a href="./questionario6/perg1.php">Install or Replace Vinyl/Linoleum Flooring</a>
+                <a href="./questionario1/perg1.php">Install or Replace Laminate Flooring</a> <br><br>
+                <a href="./questionario1/perg1.php">Install or Replace Carpet</a><br><br>
+                <a href="./questionario1/perg1.php">Install or Replace Vinyl/Linoleum Flooring</a>
             </div>
         </div>
         <div class="title2">
@@ -89,13 +89,13 @@ if(isset($_get['zipcode'])){
         </div>
         <div class="containerbtns2">
             <div class="boxbtn3">
-                <a href="./questionario7/perg1.php">Install or Replace Title Flooring</a><br><br>
-                <a href="./questionario8/perg1.php">Reapair Carpet</a><br><br>
-                <a href="./questionario9/perg1.php">Repair Vinyl/Linoleum Flooring</a>
+                <a href="./questionario1/perg1.php">Install or Replace Title Flooring</a><br><br>
+                <a href="./questionario1/perg1.php">Reapair Carpet</a><br><br>
+                <a href="./questionario1/perg1.php">Repair Vinyl/Linoleum Flooring</a>
             </div>
             <div class="boxbtn4">
-                <a href="./questionario10/perg1.php">Reapair Laminate Flooring</a> <br><br>
-                <a href="./questionario11/perg1.php">Repair Title Flooring</a><br><br>
+                <a href="./questionario1/perg1.php">Reapair Laminate Flooring</a> <br><br>
+                <a href="./questionario1/perg1.php">Repair Title Flooring</a><br><br>
                 <a href="./questionario12/perg1.php">View All Projects</a>
             </div>
         </div>
