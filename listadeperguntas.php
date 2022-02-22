@@ -30,6 +30,9 @@
 </head>
 <body>
     <div class="mainform">
+        <div class="titulo">
+            <h1>FILL OUT THE FORM TO CONTACT YOU</h1>
+        </div>
         <form action="listadeperguntas.php" method="post">
 
         <!-- PERGUNTA 1 -->
@@ -56,14 +59,15 @@
   
           <div class="inputsradio">
             <div class="radio1">
-                <input type="radio" name="perg2" id="homeresidence" value="home/Residence">
+                <input type="radio" name="perg2" id="homeresidence" value="home/Residence" required>
                 <label for="homeresidence">Home/Residence</label>
             </div>
             <div class="radio2">
-                <input type="radio" name="perg2" id="business" value="Business">
+                <input type="radio" name="perg2" id="business" value="Business"required>
                 <label for="business">Business</label>
             </div>
         </div>
+         </div>
         <!-- ------------------------------------------------------------------------------------------- -->
         <div class="box3">
             <header>
@@ -140,10 +144,10 @@
                    </div>
              </header>
          <div class="campos">
-                <input type="text" name="rua" id="rua" required>
-                <input type="text" name="zipcode" id="zipcode">
-                <input type="text" name="cidade" id="cidade">
-                <input type="text" name="estado" id="estado">
+                <input placeholder="Street" type="text" name="rua" id="rua" required><br>
+                <input  placeholder="Zipcode" type="text" name="zipcode" id="zipcode"><br>
+                <input  placeholder="City"type="text" name="cidade" id="cidade"><br>    
+                <input   placeholder="Estade"type="text" name="estado" id="estado">
          </div>
      </div>
      <!-- ========================================================================= -->

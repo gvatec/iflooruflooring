@@ -9,11 +9,9 @@ tecwebcod developers
 
 <?php
 
-if(isset($_get['zipcode'])){
+if(isset($_POST['zipcode'])){
       
-
-
-    header('Location: ./questionario12/perg1.php');
+    header('Location:listadeperguntas.php');
 }
 
 ?>
@@ -54,7 +52,7 @@ if(isset($_get['zipcode'])){
             </div>
             <div class="boxzipcode">
                 <h2 style="font-size:17px;margin-top:-20px;">Enter your zip code to start.</h2><br><br>
-                <form id="zipcode_1" method="get" action="" target="_blank">
+                <form id="zipcode_1" method="POST" action="index.php" target="_blank">
                     
                     <div class="inputs_requerid">
                          <input  type="text" name="zipcode_country" id="zipcode" value="" required autocomplete="off">
@@ -74,14 +72,14 @@ if(isset($_get['zipcode'])){
         <div class="containerbtns">
             <div class="boxbtn1">
 
-                <a href="./questionario1/perg1.php">Refinish Hardwoord Flooring</a><br><br>
-                <a href="./questionario1/perg1.php">Install or Replace Hardwoord Flooring</a><br><br>
-                <a href="./questionario1/perg1.php">Repair Hardwoord Flooring</a>
+                <a href="listadeperguntas.php">Refinish Hardwoord Flooring</a><br><br>
+                <a href="listadeperguntas.php">Install or Replace Hardwoord Flooring</a><br><br>
+                <a href="listadeperguntas.php">Repair Hardwoord Flooring</a>
             </div>
             <div class="boxbtn2">
-                <a href="./questionario1/perg1.php">Install or Replace Laminate Flooring</a> <br><br>
-                <a href="./questionario1/perg1.php">Install or Replace Carpet</a><br><br>
-                <a href="./questionario1/perg1.php">Install or Replace Vinyl/Linoleum Flooring</a>
+                <a href="listadeperguntas.php">Install or Replace Laminate Flooring</a> <br><br>
+                <a href="listadeperguntas.php">Install or Replace Carpet</a><br><br>
+                <a href="listadeperguntas.php">Install or Replace Vinyl/Linoleum Flooring</a>
             </div>
         </div>
         <div class="title2">
@@ -89,14 +87,14 @@ if(isset($_get['zipcode'])){
         </div>
         <div class="containerbtns2">
             <div class="boxbtn3">
-                <a href="./questionario1/perg1.php">Install or Replace Title Flooring</a><br><br>
-                <a href="./questionario1/perg1.php">Reapair Carpet</a><br><br>
-                <a href="./questionario1/perg1.php">Repair Vinyl/Linoleum Flooring</a>
+                <a href="listadeperguntas.php">Install or Replace Title Flooring</a><br><br>
+                <a href="listadeperguntas.php">Reapair Carpet</a><br><br>
+                <a href="listadeperguntas.php">Repair Vinyl/Linoleum Flooring</a>
             </div>
             <div class="boxbtn4">
-                <a href="./questionario1/perg1.php">Reapair Laminate Flooring</a> <br><br>
-                <a href="./questionario1/perg1.php">Repair Title Flooring</a><br><br>
-                <a href="./questionario12/perg1.php">View All Projects</a>
+                <a href="listadeperguntas.php">Reapair Laminate Flooring</a> <br><br>
+                <a href="listadeperguntas.php">Repair Title Flooring</a><br><br>
+                <a href="listadeperguntas.php">View All Projects</a>
             </div>
         </div>
     </div>
@@ -144,7 +142,7 @@ if(isset($_get['zipcode'])){
             </div>
             <div class="formulario">
                 <p>Are you ready to start your project?</p>
-                <a href="./questionario12/perg1.php">Talk To flooring Pros Today</a>
+                <a href="listadeperguntas.php">Talk To flooring Pros Today</a>
             </div>
         </div>
     </div>

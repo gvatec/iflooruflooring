@@ -36,8 +36,15 @@ nav{
 }
 
 .mainbox{
-    width: 90%;
+    width: 94%;
     height: 360px;
     border: 1px solid grey;
     margin-top: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.mainbox.activemainbox{
+    opacity: 1;
+    pointer-events: auto;
 }

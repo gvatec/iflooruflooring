@@ -11,12 +11,12 @@
    if(isset($_POST['entrar'])){
        if($emailuser == "" && $senhauser == ""){
            
-           header('Location: ../Loginiflooring/login.php');
+           header('Location:login.php');
        }
        if($emailuser == $email && $senhauser == $senha ){
-           header('Location: ./iflooruflooring_manager/managerflooring.php ');
+           header('Location: ./iflooruflooring_manager/iflooruflooring_manager.php');
       }else{
-        header('Location: ./Loginiflooring/login.php');
+        header('Location:login.php');
 
       }
    };
