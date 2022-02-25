@@ -11,19 +11,19 @@
     
 </head>
 <body>
-    <div class="container1">
+    
         <form action="testelogin.php" method="post">
             <div class="login">
                 <div class="logo"><img src="./img/logotipo.png" alt=""></div>
                 <div class="campos">
                     <h1>Login</h1>
                     <div class="input1">
+                        <label class="label" for="email">Email</label><br>
                         <input type="email" name="email" id="email" autocomplete="off">
-                        <label class="label" for="email">Email</label>
                     </div><br><br>
                     <div class="input1">
+                        <label class="label" for="senha">Password</label><br>
                         <input type="password" name="senha" id="senha" autocomplete="off">
-                        <label class="label" for="senha">Password</label>
                     </div>
                     <div class="btn">
                         <button type="submit" name="entrar" id="entrar">Entrar</button>
@@ -31,6 +31,6 @@
                 </div>
             </div>
         </form>
-    </div>
+    
 </body>
 </html>

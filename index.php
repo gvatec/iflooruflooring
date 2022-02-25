@@ -16,8 +16,6 @@ if(isset($_POST['zipcode'])){
 
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,23 +50,25 @@ if(isset($_POST['zipcode'])){
             </div>
             <div class="boxzipcode">
                 <h2 style="font-size:17px;margin-top:-20px;">Enter your zip code to start.</h2><br><br>
-                <form id="zipcode_1" method="POST" action="index.php" target="_blank">
+                <form id="zipcode_1" method="POST" action="index.php">
                     
                     <div class="inputs_requerid">
-                         <input  type="text" name="zipcode_country" id="zipcode" value="" required autocomplete="off">
-                         <label><img style="width:25px;" src="https://img.icons8.com/material-sharp/48/4a90e2/region-code.png"/>Zip code</label>
-                            <input type="submit"name="zipcode" id="zipcode" value="Search">
+                        <div>
+                            <label><img style="width:25px;" src="https://img.icons8.com/material-sharp/48/4a90e2/region-code.png"/>Zip code</label><br>
+                             <input  type="text" name="zipcode_country" id="zipcode" value="" required autocomplete="off">
+                             <input type="submit"name="zipcode" id="zipcode" value="Search">
+                        </div>
                         </div><br>
                         <p style="color:darkred;">This is required. Please enter a valid U.S. zip.</p>
                 </form>
             </div>
         </div>
     </div>
-    </div>
+    </div><br><br>
     <div class="container2">
         <div class="title">
             <h1>Select From Our Most Popular Projects</h1>
-        </div>
+        </div><br><br><br>
         <div class="containerbtns">
             <div class="boxbtn1">
 
@@ -81,7 +81,7 @@ if(isset($_POST['zipcode'])){
                 <a href="listadeperguntas.php">Install or Replace Carpet</a><br><br>
                 <a href="listadeperguntas.php">Install or Replace Vinyl/Linoleum Flooring</a>
             </div>
-        </div>
+        </div><br><br><br>
         <div class="title2">
             <h1>More Projects</h1>
         </div>
@@ -96,8 +96,8 @@ if(isset($_POST['zipcode'])){
                 <a href="listadeperguntas.php">Repair Title Flooring</a><br><br>
                 <a href="listadeperguntas.php">View All Projects</a>
             </div>
-        </div>
-    </div>
+        </div><br><br>
+    </div><br><br><br>
     <div class="container3">
         <div class="boxtext1">
             <div class="title3">
@@ -122,7 +122,7 @@ if(isset($_POST['zipcode'])){
                     but if you are <br> not fully satisfied with the estimates provided, you are not obligated to move
                     forward.</p>
             </div>
-        </div>
+        </div><br><br><br>
         <div class="boxtext2">
             <div class="title4">
                 <h2 style="font-size: 1.3rem;font-weight: 500;">We work with hundreds of Flooring <br> companies to

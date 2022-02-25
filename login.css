@@ -1,70 +1,67 @@
 *{
-    margin:0px;
-    padding:0px;
-    box-sizing:border-box;
-
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
 }
+
 body{
-    width:100%;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-.container1{
-width:100%;
-height: 100vh;
-background-image: url(./img/background.png);
-background-repeat: no-repeat;
-background-size:110%;
-display:flex;
-justify-content:center;
-align-items:center;
-
-}
-.login{
-width:50rem;
-height:400px;
-background-color:rgba(44, 44, 44, 0.575);
-display: flex;
-flex-direction: row;
-}
-.logo{
-    width: 25rem;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.campos{
-    width: 25rem;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #20458a;
 }
-.campos h1{
+.login{
+    background-color: rgba(0, 0, 0, 0.678);
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.campos{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
-    font-size: 40px;
 }
 .campos input{
-    outline: none;
-    width: 15rem;
-    height: 50px;
-    background: transparent;
-    border: 1px solid grey;
-    padding: 5px;
-    color:white;
-    font-size: 12px;
+    height: 40px;
+    padding: 15px;
 }
-.label{
-    position: absolute;
+.btn button{
+    width: 150px;
+    height: 40px;
+    background-color: grey;
     color: white;
-    font-size: 20px;
-    left: 859px;
-    transition: all 0.3s ease;
+    border:none;
+    margin-top: 5px;
+    cursor:pointer;
 }
-.campos input:focus ~ label{
-    transform: translateY(-30px);
+
+@media(max-width:415px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100vw;
+        height: 100vh;
+        background-color: #20458a;
+    }
+    .login{
+        background-color: rgba(0, 0, 0, 0.678);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
