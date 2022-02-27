@@ -70,9 +70,12 @@ $sql = "SELECT *FROM formfinal ORDER BY id DESC";
                       echo "<td>".$user_data['cidade']."</td>";
                       echo "<td>".$user_data['estado']."</td>";
                       echo "<td>
+                      <a href='../delete.php?id=$user_data[id]'>
+                      <img src='https://img.icons8.com/nolan/64/delete-forever.png'/>
+                      </a>
                       </td>";
                       echo "</tr>";
-                  }
+                    }
                 ?>
             </tbody>
          </div>

@@ -260,3 +260,45 @@ textarea{
     width: 20rem;
     height: 60px;
 }
+
+/* ------------------------------------------- */
+
+@media(max-width:415px){
+  .titulo{
+      font-size: 10px;
+  }
+  .box1 header{
+      font-size: 10px;
+  }
+  form{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  .mainform{
+    width: 90vw;
+    padding-bottom: 10px;
+  }
+  .finalform{
+      font-size: 12px;
+  }
+  .text{
+      text-align: center;
+  }
+  .title h2{
+      font-size: 18px;
+  }
+  .title h2{
+    font-size: 18px;
+}
+  .title h2{
+    font-size: 18px;
+}
+  .title h2{
+    font-size: 18px;
+}
+.endereco h2{
+    font-size: 18px;
+}
+}
