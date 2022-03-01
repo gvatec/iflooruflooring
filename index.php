@@ -11,7 +11,7 @@ tecwebcod developers
 
 if(isset($_POST['zipcode'])){
       
-    header('Location:listadeperguntas.php');
+    header('Location:formulario.php');
 }
 
 ?>
@@ -32,15 +32,15 @@ if(isset($_POST['zipcode'])){
         <header>
             <div class="logo">
                 <a href="index.html">
-                    <img style="width: 150px;height: 50px;" src="./img/logotipo.png" alt="logo">
+                    <img src="./img/logotipo.png" alt="logo">
                 </a>
                 <div style="margin-left: 1rem;" class="text1">
-                    <h2 style="font-size: 1.2rem;">We find & connect you with local pros.</h2>
+                    <h2>We find & connect you with local pros.</h2>
                 </div>
             </div>
             <div class="contacthelp">
                 <img src="https://img.icons8.com/ios/50/ffffff/phonelink-ring--v1.png" alt="contacthelp">
-                <h2 style="font-size: 1.1rem;">Need help? Call us: (732) 986-1912</h2>
+                <h2>Need help? Call us: (732) 986-1912</h2>
             </div>
         </header>
         <div class="mainbox">
@@ -64,7 +64,7 @@ if(isset($_POST['zipcode'])){
             </div>
         </div>
     </div>
-    </div><br><br>
+    </div>
     <div class="container2">
         <div class="title">
             <h1>Select From Our Most Popular Projects</h1>
@@ -72,52 +72,52 @@ if(isset($_POST['zipcode'])){
         <div class="containerbtns">
             <div class="boxbtn1">
 
-                <a href="listadeperguntas.php">Refinish Hardwoord Flooring</a><br><br>
-                <a href="listadeperguntas.php">Install or Replace Hardwoord Flooring</a><br><br>
-                <a href="listadeperguntas.php">Repair Hardwoord Flooring</a>
+                <a href="formulario.php">Refinish Hardwoord Flooring</a><br><br>
+                <a href="formulario.php">Install or Replace Hardwoord Flooring</a><br><br>
+                <a href="formulario.php">Repair Hardwoord Flooring</a>
             </div>
             <div class="boxbtn2">
-                <a href="listadeperguntas.php">Install or Replace Laminate Flooring</a> <br><br>
-                <a href="listadeperguntas.php">Install or Replace Carpet</a><br><br>
-                <a href="listadeperguntas.php">Install or Replace Vinyl/Linoleum Flooring</a>
+                <a href="formulario.php">Install or Replace Laminate Flooring</a> <br><br>
+                <a href="formulario.php">Install or Replace Carpet</a><br><br>
+                <a href="formulario.php">Install or Replace Vinyl/Linoleum Flooring</a>
             </div>
         </div><br><br><br>
         <div class="title2">
             <h1>More Projects</h1>
-        </div>
+        </div><br><br>
         <div class="containerbtns2">
             <div class="boxbtn3">
-                <a href="listadeperguntas.php">Install or Replace Title Flooring</a><br><br>
-                <a href="listadeperguntas.php">Reapair Carpet</a><br><br>
-                <a href="listadeperguntas.php">Repair Vinyl/Linoleum Flooring</a>
+                <a href="formulario.php">Install or Replace Title Flooring</a><br><br>
+                <a href="formulario.php">Reapair Carpet</a><br><br>
+                <a href="formulario.php">Repair Vinyl/Linoleum Flooring</a>
             </div>
             <div class="boxbtn4">
-                <a href="listadeperguntas.php">Reapair Laminate Flooring</a> <br><br>
-                <a href="listadeperguntas.php">Repair Title Flooring</a><br><br>
-                <a href="listadeperguntas.php">View All Projects</a>
+                <a href="formulario.php">Reapair Laminate Flooring</a> <br><br>
+                <a href="formulario.php">Repair Title Flooring</a><br><br>
+                <a href="formulario.php">View All Projects</a>
             </div>
         </div><br><br>
-    </div><br><br><br>
+    </div><br>
     <div class="container3">
         <div class="boxtext1">
             <div class="title3">
-                <h1 style="font-size: 1.5rem;">Get Accuarate Quotes For your Flooring Project</h1>
+                <h1>Get Accuarate Quotes For your Flooring Project</h1>
             </div><br>
             <div class="titleparagrafo1">
                 <h3>Compare bids from local flooring contractors.</h3><br>
-                <p style="font-size: 0.9rem;">We'll find you up to 4 flooring pros who specialize in your project type -
+                <p>We'll find you up to 4 flooring pros who specialize in your project type -
                     in less than 24 hours. <br>
                     That means you can compare flooring estimates side by side without having to call multiple <br>
                     flooring pros yourself.</p>
             </div><br>
             <div class="titleparagrafo2">
                 <h3>We don't charge a dime!</h3><br>
-                <p style="font-size: 0.9rem;">Our flooring estimate service is 100% free.
+                <p>Our flooring estimate service is 100% free.
                     We don't ask for ANY financial information and <br> you can use us as many times as you like.</p>
             </div><br>
             <div class="titleparagrafo3">
                 <h3>You don't have any obligations.</h3><br>
-                <p style="font-size: 0.9rem;">We find you qualified flooring pros that best meet the needs of your
+                <p>We find you qualified flooring pros that best meet the needs of your
                     project,
                     but if you are <br> not fully satisfied with the estimates provided, you are not obligated to move
                     forward.</p>
@@ -125,11 +125,11 @@ if(isset($_POST['zipcode'])){
         </div><br><br><br>
         <div class="boxtext2">
             <div class="title4">
-                <h2 style="font-size: 1.3rem;font-weight: 500;">We work with hundreds of Flooring <br> companies to
+                <h2>We work with hundreds of Flooring <br> companies to
                     provide rop service</h2>
             </div><br><br>
             <div class="titleparagrafo4">
-                <p style="font-size: 0.9rem;">The flooring pros in our network specialize in all types of <br> flooring
+                <p>The flooring pros in our network specialize in all types of <br> flooring
                     projects such as hardwood,
                     laminate, carpet, tile, <br> and many other home renovation and home improvement <br> projects.
                     <br><br>
@@ -141,8 +141,8 @@ if(isset($_POST['zipcode'])){
                 </p>
             </div>
             <div class="formulario">
-                <p>Are you ready to start your project?</p>
-                <a href="listadeperguntas.php">Talk To flooring Pros Today</a>
+                <p><strong>Are you ready to start your project?</strong></p>
+                <a href="formulario.php">Talk To flooring Pros Today</a>
             </div>
         </div>
     </div>
