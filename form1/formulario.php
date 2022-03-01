@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['submit'])){
-    include_once('Database_config.php');
+    include_once('../Database_config.php');
     $name = $_POST['name'];
     $email = $_POST['email'];
     $tel = $_POST['tel'];
@@ -136,14 +136,13 @@ if(isset($_POST['submit'])){
       <div class="step step-6">
           <h2>Your Address</h2>
           <div class="form-grup">
-          <input placeholder="Street" type="text" name="rua" id="rua" required><br>
-          <input  placeholder="Zipcode" type="text" name="zipcode" id="zipcode"><br>
-          <input  placeholder="City"type="text" name="cidade" id="cidade"><br>    
-          <input   placeholder="Estade"type="text" name="estado" id="estado">
+             <input placeholder="Street" type="text" name="rua" id="rua" required><br>
+             <input  placeholder="Zipcode" type="text" name="zipcode" id="zipcode"><br>
+             <input  placeholder="City"type="text" name="cidade" id="cidade"><br>    
+             <input   placeholder="Estade"type="text" name="estado" id="estado">
           </div>
           <button type="button" class="previous-btn">Prev</button>
           <button type="button" class="next-btn">Next</button>
-
       </div>
        <div class="step step-7">
            <h2>Enter your address</h2>

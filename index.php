@@ -72,13 +72,13 @@ if(isset($_POST['zipcode'])){
         <div class="containerbtns">
             <div class="boxbtn1">
 
-                <a href="formulario.php">Refinish Hardwoord Flooring</a><br><br>
-                <a href="formulario.php">Install or Replace Hardwoord Flooring</a><br><br>
+                <a href="form1/formulario.php">Refinish Hardwoord Flooring</a><br><br>
+                <a href="">Install or Replace Hardwoord Flooring</a><br><br>
                 <a href="formulario.php">Repair Hardwoord Flooring</a>
             </div>
             <div class="boxbtn2">
                 <a href="formulario.php">Install or Replace Laminate Flooring</a> <br><br>
-                <a href="formulario.php">Install or Replace Carpet</a><br><br>
+                <a href="form2/formulario2.php">Install or Replace Carpet</a><br><br>
                 <a href="formulario.php">Install or Replace Vinyl/Linoleum Flooring</a>
             </div>
         </div><br><br><br>
@@ -142,7 +142,11 @@ if(isset($_POST['zipcode'])){
             </div>
             <div class="formulario">
                 <p><strong>Are you ready to start your project?</strong></p>
+<<<<<<< HEAD
                 <a href="formulario.php">Talk To flooring Pros Today</a>
+=======
+                <a href="listadeperguntas.php">Talk To flooring Pros Today</a>
+>>>>>>> 15dc225d032dc6022bcc6a57dab563fe283d8394
             </div>
         </div>
     </div>
