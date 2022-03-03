@@ -43,14 +43,14 @@ if(isset($_POST['submit'])){
                 <h2>Have you already purchased the carpet for this project?</h2>
                 <div class="form-grup">
                     <div class="border">
-                        <label for="no">No</label>
                         <input type="radio" name="perg1" id="no" value="no" require>
+                        <label for="no">No</label>
                     </div>
                 </div>
                 <div class="form-grup">
                     <div class="border">
-                        <label for="yes">Yes</label>
                         <input type="radio" name="perg1" id="yes" value="yes" require>
+                        <label for="yes">Yes</label>
                     </div>
                 </div>
                 <div class="btns">
@@ -64,8 +64,10 @@ if(isset($_POST['submit'])){
                       <label for="text">(Optional)</label><br>
                       <textarea name="text" id="text" cols="35" rows="7"></textarea>
                  </div>
-                   <button type="button" class="prev-btn">Preview</button>
-                   <button type="button" class="next-btn">Next</button>
+                 <div class="btns">
+            <button type="button" class="previous-btn">Prev</button>
+            <button type="button" class="next-btn">Next</button>
+        </div>
               </div>
 
               <div class="box box-3">
@@ -81,8 +83,10 @@ if(isset($_POST['submit'])){
                           <input type="radio" name="perg2" id="business" value="Business"required>
                           <label for="perg2">Business</label>   
                       </div>
-                        <button type="button" class="prev-btn">Prev</button>
-                        <button type="button" class="next-btn">Next</button>
+                      <div class="btns">
+            <button type="button" class="previous-btn">Prev</button>
+            <button type="button" class="next-btn">Next</button>
+        </div>
                  </div>
               </div>
               <div class="box box-4">
@@ -111,8 +115,10 @@ if(isset($_POST['submit'])){
                           <label for="option4">More than 2 weeks</label>
                      </div>
                  </div>
-                 <button type="button" class="prev-btn">Prev</button>
-                 <button type="button" class="next-btn">Next</button>
+                 <div class="btns">
+            <button type="button" class="previous-btn">Prev</button>
+            <button type="button" class="next-btn">Next</button>
+        </div>
              </div>
                   <div class="box box-5">
                        <h2>Are you the owner or authorized to make property changes?</h2>
@@ -134,8 +140,10 @@ if(isset($_POST['submit'])){
                          </div>
                         </div>
                      </div>
-                     <button type="button" class="prev-btn">Prev</button>
-                     <button type="button" class="next-btn">Next</button>
+                     <div class="btns">
+            <button type="button" class="previous-btn">Prev</button>
+            <button type="button" class="next-btn">Next</button>
+        </div>
                   </div>
                   <div class="box box-6">
                       <h2>What's the project address?</h2>
@@ -145,8 +153,10 @@ if(isset($_POST['submit'])){
                          <input  placeholder="City"type="text" name="cidade" id="cidade"><br>    
                          <input   placeholder="Estade"type="text" name="estado" id="estado">
                      </div>
-                     <button type="button" class="prev-btn">Prev</button>
-                     <button type="button" class="next-btn">Next</button>
+                     <div class="btns">
+            <button type="button" class="previous-btn">Prev</button>
+            <button type="button" class="next-btn">Next</button>
+        </div>
                   </div>
                   <div class="box box-7">
                   <h2>Enter your address</h2>

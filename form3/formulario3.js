@@ -1,6 +1,6 @@
 const box = Array.from(document.querySelectorAll("form .box"));
 const nextBtn = document.querySelectorAll("form .next-btn");
-const prevBtn = document.querySelectorAll("form .prev-btn");
+const prevBtn = document.querySelectorAll("form .previous-btn");
 
 nextBtn.forEach((button) => {
   button.addEventListener("click", () => {

@@ -102,7 +102,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    margin-top: 10rem;
 }
 
 .containerbtns{
@@ -180,9 +180,12 @@ body{
     }
     .containerbtns{
         font-size: 13px;
+        flex-direction: column;
     }
     .containerbtns2{
         font-size: 13px;
+        flex-direction: column;
+    
     }
     .container3 .title3{
         font-size: 13px;

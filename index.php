@@ -73,13 +73,13 @@ if(isset($_POST['zipcode'])){
             <div class="boxbtn1">
 
                 <a href="form1/formulario.php">Refinish Hardwoord Flooring</a><br><br>
-                <a href="">Install or Replace Hardwoord Flooring</a><br><br>
-                <a href="formulario.php">Repair Hardwoord Flooring</a>
-            </div>
+                <a href="form3/formulario3.php">Install or Replace Hardwoord Flooring</a><br><br>
+                <a href="form4/formulario4.php">Repair Hardwoord Flooring</a>
+            </div><br><br>
             <div class="boxbtn2">
-                <a href="formulario.php">Install or Replace Laminate Flooring</a> <br><br>
+                <a href="form5/formulario5.php">Install or Replace Laminate Flooring</a> <br><br>
                 <a href="form2/formulario2.php">Install or Replace Carpet</a><br><br>
-                <a href="formulario.php">Install or Replace Vinyl/Linoleum Flooring</a>
+                <a href="form6/formulario6.php">Install or Replace Vinyl/Linoleum Flooring</a>
             </div>
         </div><br><br><br>
         <div class="title2">
@@ -87,17 +87,17 @@ if(isset($_POST['zipcode'])){
         </div><br><br>
         <div class="containerbtns2">
             <div class="boxbtn3">
-                <a href="formulario.php">Install or Replace Title Flooring</a><br><br>
-                <a href="formulario.php">Reapair Carpet</a><br><br>
-                <a href="formulario.php">Repair Vinyl/Linoleum Flooring</a>
-            </div>
+                <a href="form7/formulario7.php">Install or Replace Title Flooring</a><br><br>
+                <a href="form8/formulario8.php">Reapair Carpet</a><br><br>
+                <a href="form9/formulario9.php">Repair Vinyl/Linoleum Flooring</a>
+            </div><br><br>
             <div class="boxbtn4">
                 <a href="formulario.php">Reapair Laminate Flooring</a> <br><br>
                 <a href="formulario.php">Repair Title Flooring</a><br><br>
                 <a href="formulario.php">View All Projects</a>
             </div>
-        </div><br><br>
-    </div><br>
+        </div>  
+    </div>
     <div class="container3">
         <div class="boxtext1">
             <div class="title3">
@@ -142,11 +142,7 @@ if(isset($_POST['zipcode'])){
             </div>
             <div class="formulario">
                 <p><strong>Are you ready to start your project?</strong></p>
-<<<<<<< HEAD
                 <a href="formulario.php">Talk To flooring Pros Today</a>
-=======
-                <a href="listadeperguntas.php">Talk To flooring Pros Today</a>
->>>>>>> 15dc225d032dc6022bcc6a57dab563fe283d8394
             </div>
         </div>
     </div>
