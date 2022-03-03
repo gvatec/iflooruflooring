@@ -86,26 +86,26 @@ if(isset($_POST['submit'])){
       </div>
       <div class="step step-4">
           <h2>What is your timeframe?</h2>
-          <div class="form-grup">
+          <div class="form-group">
               <div class="border">
                   <input type="radio" name="perg4" id="option1" value="timing is flexible">
                   <label for="option1">Timing is flexible</label>
               </div>
           </div>
-          <div class="form-grup">
+          <div class="form-group">
               <div class="border">
                   <input type="radio" name="perg4" id="option2" value="within 1 week">
                   <label for="option2">Within 1 week</label>
               </div>
 
           </div>
-          <div class="form-grup">
+          <div class="form-group">
               <div class="border">
                   <input type="radio" name="perg4" id="option3" value="1 - 2 weeks">
                   <label for="option3">1 - 2 weeks</label>
               </div>
           </div>
-          <div class="form-grup">
+          <div class="form-group">
               <div class="border">
                   <input type="radio" name="perg4" id="option4" value="more than 2 weeks">
                   <label for="option4">More than 2 weeks</label>
@@ -118,18 +118,18 @@ if(isset($_POST['submit'])){
       </div>
       <div class="step step-5">
           <h2>Are you the owner?</h2>
-          <div class="form-grup">
+          <div class="form-group">
               <div class="border">
                   <input type="radio" name="perg5" id="yes" value="yes">
                   <label for="yes">Yes</label>
               </div>
-           <div class="form-grup">
+           <div class="form-group">
                <div class="border">
                    <input type="radio" name="perg5" id="no" value="no">
                    <label for="no">No</label>
                </div>
            </div>
-           <div class="form-grup">
+           <div class="form-group">
                <div class="border">
                    <input type="radio" name="perg5" id="option2" value="no, but authorized to make changes">
                    <label for="option2">No, but authorized to make changes</label>
@@ -143,7 +143,7 @@ if(isset($_POST['submit'])){
       </div>
       <div class="step step-6">
           <h2>Your Address</h2>
-          <div class="form-grup">
+          <div class="form-group">
              <input placeholder="Street" type="text" name="rua" id="rua" required><br>
              <input  placeholder="Zipcode" type="text" name="zipcode" id="zipcode"><br>
              <input  placeholder="City"type="text" name="cidade" id="cidade"><br>    
@@ -156,15 +156,15 @@ if(isset($_POST['submit'])){
       </div>
        <div class="step step-7">
            <h2>Enter your address</h2>
-           <div class="form-grup">
+           <div class="form-group">
            <img style="width:30px;height:30px;" src="https://img.icons8.com/ios-filled/50/4a90e2/user.png"/>
            <input placeholder="First and last name" type="text" name="name" id="name">
            </div>
-           <div class="form-grup">
+           <div class="form-group">
            <img style="width:30px;height:30px;" src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/64/4a90e2/external-email-interface-kiranshastry-solid-kiranshastry.png"/>
            <input placeholder="Email address" type="email" name="email" id="email">
            </div>
-           <div class="form-grup">
+           <div class="form-group">
            <img style="width:30px;height:30px;" src="https://img.icons8.com/ios-filled/50/4a90e2/phonelink-ring--v1.png"/>
            <input placeholder="Phone" type="tel" name="tel" id="tel">
            </div>

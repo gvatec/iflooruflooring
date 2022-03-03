@@ -25,11 +25,11 @@ section {
     justify-content: center;
 }
 
-.step {
+.box {
     display: none;
 }
 
-.step.active {
+.box.active {
     display: block;
     display: flex;
     justify-content: center;
@@ -37,37 +37,12 @@ section {
     flex-direction: column;
 }
 
-.step-1 textarea {
-    font-size: 15px;
-    padding: 10px;
-}
-
-.step-4 button {
-    margin-right: 15px;
-}
-
-.step-6 input {
-    padding: 10px;
-    text-align: center;
+.border {
     margin-bottom: 5px;
-    width: 300px;
-}
-
-.step-6 button {
-    margin-right: 15px;
-}
-
-.step-6 .form-group {
+    border: 1px solid grey;
+    padding: 10px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-.step-7 input {
-    padding: 10px;
-    text-align: center;
-    margin-bottom: 5px;
     width: 300px;
 }
 
@@ -80,21 +55,28 @@ section {
     font-size: 18px;
     border-radius: 4px;
     margin-right: 5px;
-    margin-bottom: 5px;
-    outline:none;
-    border: 1px solid grey;
 }
 
-.form-group input[type="radio"]{
-    width: 50px;
-}
- .border {
-    margin-bottom: 5px;
-    border: 1px solid grey;
+.box-6 input {
     padding: 10px;
-    display: flex;
-    align-items: center;
+    text-align: center;
     width: 300px;
+    border: 1px solid grey;
+    margin-bottom: 5px;
+}
+
+.box-7 input {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid grey;
+    width: 300px;
+}
+
+.box-7 .form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 button.next-btn,

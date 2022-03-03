@@ -1,4 +1,24 @@
 <?php
+if(isset($_POST['submit'])){
+    include_once('../Database_config.php');
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $tel = $_POST['tel'];
+    $textarea = $_POST['text'];
+    $pergunta2 = $_POST['box1'];
+    $pergunta3 = $_POST['box2'];
+    $pergunta4 = $_POST['box3'];
+    $pergunta5 = $_POST['box5'];
+    $pergunta6 = $_POST['box6'];
+    $pergunta7 = $_POST['box7'];   
+    $rua = $_POST['rua'];
+    $zipcode = $_POST['zipcode'];
+    $cidade = $_POST['cidade'];
+    $estado = $_POST['estado'];
+
+    $resultado = mysqli_query($conecxao, "INSERT INTO formfinal(nome,email,telefone,pergunta1,pergunta2,pergunta3,pergunta4,pergunta5,pergunta6,pergunta7,rua,zipcode,cidade,estado) VALUES
+    ('$name', '$email','$tel','$textarea','$pergunta2','$pergunta3','$pergunta4','$pergunta5','$pergunta6','$pergunta7','$rua','$zipcode','$cidade','$estado')");
+}
 
 ?>
 
@@ -13,25 +33,25 @@
 </head>
 <body>
     <section>
-        <form action="">
+        <form action="formulario8.php" method="post">
             <div class="container">
                 <div class="box box-1 active">
                    <h2>What type of flooring project is this?</h2>
                     <div class="form-group">
                         <div class="border">
-                            <input type="radio" name="box2" id="option1" value="replace existing tile">
+                            <input type="radio" name="box1" id="option1" value="replace existing tile">
                             <label for="option1">Replace existing tile</label>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="border">
-                            <input type="radio" name="box2" id="option2" value="Replace existing no-tile surface">
+                            <input type="radio" name="box1" id="option2" value="Replace existing no-tile surface">
                             <label for="option2">Replace existing no-tile surface</label>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="border">
-                            <input type="radio" name="box2" id="option3" value="Tile for new construction">
+                            <input type="radio" name="box1" id="option3" value="Tile for new construction">
                             <label for="option3">Tile for new construction</label>
                         </div>
                     </div>
@@ -114,13 +134,13 @@
                      <h2>What kind of location is this?</h2>
                      <div class="form-group">
                           <div class="border">
-                              <input type="radio" name="perg2" id="homeresidence" value="home/Residence" required>
+                              <input type="radio" name="box5" id="homeresidence" value="home/Residence" required>
                               <label for="perg2">Home/Residence</label>
                          </div>
                      </div>
                       <div class="form-group">
                           <div class="border">
-                              <input type="radio" name="perg2" id="business" value="Business"required>
+                              <input type="radio" name="box5" id="business" value="Business"required>
                               <label for="perg2">Business</label>
                           </div>
                       </div>
@@ -129,54 +149,53 @@
                           <button type="button" class="next-btn">Next</button>                             
                      </div>
                  </div>
-                 <div class="box box-6">
+                          <div class="box box-6">
                                <h2>What is your timeframe?</h2>
-          <div class="form-group">
-              <div class="border">
-                  <input type="radio" name="perg4" id="option1" value="timing is flexible">
-                  <label for="option1">Timing is flexible</label>
-              </div>
-          </div>
-          <div class="form-group">
-              <div class="border">
-                  <input type="radio" name="perg4" id="option2" value="within 1 week">
-                  <label for="option2">Within 1 week</label>
-              </div>
-
-          </div>
-          <div class="form-group">
-              <div class="border">
-                  <input type="radio" name="perg4" id="option3" value="1 - 2 weeks">
-                  <label for="option3">1 - 2 weeks</label>
-              </div>
-          </div>
-          <div class="form-group">
-              <div class="border">
-                  <input type="radio" name="perg4" id="option4" value="more than 2 weeks">
-                  <label for="option4">More than 2 weeks</label>
-              </div>
-          </div>
-          <div class="btns">
-            <button type="button" class="previous-btn">Prev</button>
-            <button type="button" class="next-btn">Next</button>
-          </div>
-         </div>
+                               <div class="form-group">
+                                 <div class="border">
+                                     <input type="radio" name="box6" id="option1" value="timing is flexible">
+                                     <label for="option1">Timing is flexible</label>
+                                 </div>
+                             </div>
+                             <div class="form-group">
+                                 <div class="border">
+                                     <input type="radio" name="box6" id="option2" value="within 1 week">
+                                     <label for="option2">Within 1 week</label>
+                                 </div>
+                             </div>
+                             <div class="form-group">
+                                 <div class="border">
+                                     <input type="radio" name="box6" id="option3" value="1 - 2 weeks">
+                                     <label for="option3">1 - 2 weeks</label>
+                                 </div>
+                             </div>
+                             <div class="form-group">
+                                  <div class="border">
+                                      <input type="radio" name="box6" id="option4" value="more than 2 weeks">
+                                      <label for="option4">More than 2 weeks</label>
+                                 </div>
+                             </div>
+                                  <div class="btns">
+                                       <button type="button" class="previous-btn">Prev</button>
+                                       <button type="button" class="next-btn">Next</button>
+                                   </div>
+                           </div>
          <div class="box box-7">
                        <h2>Are you the owner?</h2>
           <div class="form-group">
               <div class="border">
-                  <input type="radio" name="perg5" id="yes" value="yes">
+                  <input type="radio" name="box7" id="yes" value="yes">
                   <label for="yes">Yes</label>
               </div>
            <div class="form-group">
                <div class="border">
-                   <input type="radio" name="perg5" id="no" value="no">
+                   <input type="radio" name="box7" id="no" value="no">
                    <label for="no">No</label>
                </div>
            </div>
            <div class="form-group">
                <div class="border">
-                   <input type="radio" name="perg5" id="option2" value="no, but authorized to make changes">
+                   <input type="radio" name="box7" id="option2" value="no, but authorized to make changes">
                    <label for="option2">No, but authorized to make changes</label>
                </div>
            </div>

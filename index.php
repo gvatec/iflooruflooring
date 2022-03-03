@@ -11,7 +11,7 @@ tecwebcod developers
 
 if(isset($_POST['zipcode'])){
       
-    header('Location:formulario.php');
+    header('Location:form1/formulario.php');
 }
 
 ?>
@@ -25,6 +25,7 @@ if(isset($_POST['zipcode'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home|I Floor U Flooring</title>
     <link rel="stylesheet" href="./css-index/index.css">
+    <link rel="shortcut icon" href="./img/logotipo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -68,7 +69,7 @@ if(isset($_POST['zipcode'])){
     <div class="container2">
         <div class="title">
             <h1>Select From Our Most Popular Projects</h1>
-        </div><br><br><br>
+        </div><br>
         <div class="containerbtns">
             <div class="boxbtn1">
 
@@ -92,9 +93,9 @@ if(isset($_POST['zipcode'])){
                 <a href="form9/formulario9.php">Repair Vinyl/Linoleum Flooring</a>
             </div><br><br>
             <div class="boxbtn4">
-                <a href="formulario.php">Reapair Laminate Flooring</a> <br><br>
-                <a href="formulario.php">Repair Title Flooring</a><br><br>
-                <a href="formulario.php">View All Projects</a>
+                <a href="form10/formulario10.php">Reapair Laminate Flooring</a> <br><br>
+                <a href="form11/formulario11.php">Repair Title Flooring</a><br><br>
+                <a href="form12/formulario12.php">View All Projects</a>
             </div>
         </div>  
     </div>
@@ -142,7 +143,7 @@ if(isset($_POST['zipcode'])){
             </div>
             <div class="formulario">
                 <p><strong>Are you ready to start your project?</strong></p>
-                <a href="formulario.php">Talk To flooring Pros Today</a>
+                <a href="form12/formulario12.php">Talk To flooring Pros Today</a>
             </div>
         </div>
     </div>

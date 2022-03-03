@@ -1,4 +1,22 @@
 <?php
+if(isset($_POST['submit'])){
+    include_once('../Database_config.php');
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $tel = $_POST['tel'];
+    $textarea = $_POST['text'];
+    $pergunta2 = $_POST['perg2'];
+    $pergunta3 = $_POST['perg3'];
+    $pergunta4 = $_POST['perg4'];
+    $pergunta5 = $_POST['perg5'];
+    $rua = $_POST['rua'];
+    $zipcode = $_POST['zipcode'];
+    $cidade = $_POST['cidade'];
+    $estado = $_POST['estado'];
+
+    $resultado = mysqli_query($conecxao, "INSERT INTO formfinal(nome,email,telefone,pergunta1,pergunta2,pergunta3,pergunta4,pergunta5,rua,zipcode,cidade,estado) VALUES
+    ('$name', '$email','$tel','$textarea','$pergunta2','$pergunta3','$pergunta4','$pergunta5','$rua','$zipcode','$cidade','$estado')");
+}
 
 ?>
 
@@ -14,7 +32,7 @@
 </head>
 <body>
     <section>
-        <form action="">
+        <form action="formulario6.php" method="post">
             <div class="container">
                 <div class="box box-1 active">
                 <h2>Have you already purchased the materials for this project?</h2>

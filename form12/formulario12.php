@@ -5,16 +5,18 @@ if(isset($_POST['submit'])){
     $email = $_POST['email'];
     $tel = $_POST['tel'];
     $textarea = $_POST['text'];
-    $pergunta3 = $_POST['perg2'];
-    $pergunta4 = $_POST['perg4'];
-    $pergunta5 = $_POST['perg5'];
+    $pergunta2 = $_POST['box2'];
+    $pergunta3 = $_POST['box3'];
+    $pergunta4 = $_POST['box4'];
+    $pergunta5 = $_POST['perg2'];
+    $pergunta6 = $_POST['perg4'];
     $rua = $_POST['rua'];
     $zipcode = $_POST['zipcode'];
     $cidade = $_POST['cidade'];
     $estado = $_POST['estado'];
 
-    $resultado = mysqli_query($conecxao, "INSERT INTO formfinal(nome,email,telefone,pergunta1,pergunta3,pergunta4,pergunta5,rua,zipcode,cidade,estado) VALUES
-    ('$name', '$email','$tel','$textarea','$pergunta3','$pergunta4','$pergunta5','$rua','$zipcode','$cidade','$estado')");
+    $resultado = mysqli_query($conecxao, "INSERT INTO formfinal(nome,email,telefone,pergunta1,pergunta2,pergunta3,pergunta4,pergunta5,pergunta6,rua,zipcode,cidade,estado) VALUES
+    ('$name', '$email','$tel','$textarea','$pergunta2','$pergunta3','$pergunta4','$pergunta5','$pergunta6','$rua','$zipcode','$cidade','$estado')");
 }
 
 ?>
@@ -26,23 +28,105 @@ if(isset($_POST['submit'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" href="formulario9.css">
+    <link rel="stylesheet" href="formulario12.css">
 </head>
 <body>
     <section>
-        <form action="formulario9.php" method="post">
+        <form action="formulario12.php" method="post">
             <div class="container">
                 <div class="box box-1 active">
-                                        <h1>Do you have any additional project details to add?</h1>
+                                       <h2>What type of flooring project is this?</h2>
+                    <div class="form-group">
+                        <div class="border">
+                            <input type="radio" name="box2" id="option1" value="replace existing tile">
+                            <label for="option1">Replace existing tile</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="border">
+                            <input type="radio" name="box2" id="option2" value="Replace existing no-tile surface">
+                            <label for="option2">Replace existing no-tile surface</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="border">
+                            <input type="radio" name="box2" id="option3" value="Tile for new construction">
+                            <label for="option3">Tile for new construction</label>
+                        </div>
+                    </div>
+                    <div class="btns">
+                       <button type="button" class="previous-btn">Prev</button>
+                       <button type="button" class="next-btn">Next</button>
+                </div>
+                </div>
+                <div class="box box-2">
+                                        <h2>Select the type of flooring material you want</h2>
+                    <div class="form-group">
+                        <div class="border">
+                            <input type="radio" name="box3" id="option1" value="carpet">
+                            <label for="option1">Carpet</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="border">
+                            <input type="radio" name="box3" id="option2" value="Hardwood">
+                            <label for="option2">Hardwood</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="border">
+                            <input type="radio" name="box3" id="option3" value="Laminate">
+                            <label for="option3">Laminate</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="border">
+                            <input type="radio" name="box3" id="option3" value="Tile">
+                            <label for="option3">Tile</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="border">
+                            <input type="radio" name="box3" id="option3" value="Vinyl or linoleun">
+                            <label for="option3">Vinyl or linoleun</label>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button type="button" class="previous-btn">Prev</button>
+                       <button type="button" class="next-btn">Next</button>
+                </div>
+                </div>
+                <div class="box box-3">
+                     <h2>Select the type of flooring material you want</h2>
+                    <div class="form-group">
+                        <div class="border">
+                            <input type="radio" name="box4" id="option1" value="yes">
+                            <label for="option1">yes</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="border">
+                            <input type="radio" name="box4" id="option2" value="no">
+                            <label for="option2">no</label>
+                        </div>
+                    </div>
+                    <div class="btns">
+                       <button type="button" class="previous-btn">Prev</button>
+                       <button type="button" class="next-btn">Next</button>
+                </div>
+                </div>
+                <div class="box box-4">
+                      <h1>Do you have any additional project details to add?</h1>
                        <div class="form-group">
                           <label for="text">(Optional)</label><br>
                           <textarea name="text" id="text" cols="35" rows="7"></textarea>
                      </div>
                         <div class="btns">
+                           <button type="button" class="previous-btn">Prev</button>
                            <button type="button" class="next-btn">Next</button>
                         </div>
                 </div>
-                <div class="box box-2">
+                <div class="box box-5">
                               <h2>What kind of location is this?</h2>
         <div class="form-group">
             <div class="border">
@@ -60,27 +144,9 @@ if(isset($_POST['submit'])){
             <button type="button" class="previous-btn">Prev</button>
             <button type="button" class="next-btn">Next</button>
         </div>
+
                 </div>
-                <div class="box box-3">
-                              <h2>Have you already purchased the materials for this project?</h2>
-        <div class="form-group">
-            <div class="border">
-                <input type="radio" name="perg3" id="yes" value="yes">
-                <label for="yes">Yes</label>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="border">
-                <input type="radio" name="perg3" id="no" value="no">
-                <label for="no">No</label>
-            </div>
-        </div>
-        <div class="btns">
-            <button type="button" class="previous-btn">Prev</button>
-            <button type="button" class="next-btn">Next</button>
-        </div>
-                </div>
-                <div class="box box-4">
+                <div class="box box-6">
                               <h2>What is your timeframe?</h2>
           <div class="form-group">
               <div class="border">
@@ -111,9 +177,8 @@ if(isset($_POST['submit'])){
             <button type="button" class="previous-btn">Prev</button>
             <button type="button" class="next-btn">Next</button>
         </div>
-
                 </div>
-                <div class="box box-5">
+                <div class="box box-7">
                               <h2>Are you the owner?</h2>
           <div class="form-group">
               <div class="border">
@@ -139,7 +204,7 @@ if(isset($_POST['submit'])){
         </div>
 
                 </div>
-                <div class="box box-6">
+                <div class="box box-8">
                               <h2>Your Address</h2>
           <div class="form-group">
              <input placeholder="Street" type="text" name="rua" id="rua" required><br>
@@ -153,7 +218,7 @@ if(isset($_POST['submit'])){
         </div>
 
                 </div>
-                <div class="box box-7">
+                <div class="box box-9">
                                <h2>Enter your address</h2>
            <div class="form-group">
            <img style="width:30px;height:30px;" src="https://img.icons8.com/ios-filled/50/4a90e2/user.png"/>
@@ -173,6 +238,6 @@ if(isset($_POST['submit'])){
             </div>
         </form>
     </section>
-    <script src="formulario9.js"></script>
+    <script src="formulario12.js"></script>
 </body>
 </html>

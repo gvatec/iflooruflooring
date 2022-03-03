@@ -1,4 +1,22 @@
 <?php
+if(isset($_POST['submit'])){
+    include_once('../Database_config.php');
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $tel = $_POST['tel'];
+    $textarea = $_POST['text'];
+    $pergunta2 = $_POST['box2'];
+    $pergunta3 = $_POST['box5'];
+    $pergunta4 = $_POST['perg4'];
+    $pergunta5 = $_POST['perg5'];
+    $rua = $_POST['rua'];
+    $zipcode = $_POST['zipcode'];
+    $cidade = $_POST['cidade'];
+    $estado = $_POST['estado'];
+
+    $resultado = mysqli_query($conecxao, "INSERT INTO formfinal(nome,email,telefone,pergunta1,pergunta2,pergunta3,pergunta4,pergunta5,rua,zipcode,cidade,estado) VALUES
+    ('$name', '$email','$tel','$textarea','$pergunta2','$pergunta3','$pergunta4','$pergunta5','$rua','$zipcode','$cidade','$estado')");
+}
 
 ?>
 
@@ -14,7 +32,7 @@
 <body>
     <section>
         <div class="container">
-            <form action="">
+            <form action="formulario3.php" method="post">
                 <div class="box box-1 active">
                     <div class="form-grup">
                     <h2>Have you already purchased the carpet for this project?</h2>
@@ -40,19 +58,19 @@
                      <h2>Select the type of wood flooring you would like to install:</h2>
                       <div class="form-grup">
                             <div class="border">
-                                <input type="radio" name="option1" id="option1 " value="Natural wood">
-                                <label for="option1">Natural wood</label>
+                                <input type="radio" name="box2" id="option1 " value="Natural wood">
+                                <label for="box2">Natural wood</label>
                             </div>
                         </div>
                         <div class="form-grup">
                             <div class="border">
-                                <input type="radio" name="option2" id="option2" value="Wood laminate">
+                                <input type="radio" name="box2" id="option2" value="Wood laminate">
                                 <label for="option2">Wood laminate</label>
                             </div>
                         </div>
                         <div class="form-grup">
                             <div class="border">
-                                <input type="radio" name="option3" id="option3" value="Want recommendation">
+                                <input type="radio" name="box2" id="option3" value="Want recommendation">
                                 <label for="option3">Want recommendation</label>
                             </div>                    
                         </div>
@@ -108,14 +126,14 @@
          <h2>What kind of location is this?</h2>
         <div class="form-grup">
             <div class="border">
-                <input type="radio" name="perg2" id="homeresidence" value="home/Residence" required>
-                <label for="perg2">Home/Residence</label>
+                <input type="radio" name="box5" id="homeresidence" value="home/Residence" required>
+                <label for="box5">Home/Residence</label>
             </div>
         </div>
                    <div class="form-grup">
                       <div class="border">
-                <input type="radio" name="perg2" id="business" value="Business"required>
-                <label for="perg2">Business</label>
+                <input type="radio" name="box5" id="business" value="Business"required>
+                <label for="box5">Business</label>
                  </div>
                 </div>
                 <div class="btns">
