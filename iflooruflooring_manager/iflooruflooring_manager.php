@@ -36,7 +36,7 @@ $sql = "SELECT *FROM formfinal ORDER BY id DESC";
          <div class="litapedidos">
            <table class="table text-black table-bg">
              <thead>
-                <tr style="color:black;">
+                <tr style="color:darkblue;">
                     <th scope="col">Id</th>
                     <th scope="col">Name</th>
                     <th scope="col">Phone</th>
@@ -49,11 +49,10 @@ $sql = "SELECT *FROM formfinal ORDER BY id DESC";
                     <th scope="col">Street</th>
                     <th scope="col">Zipcode</th>
                     <th scope="col">City</th>
-                    <th scope="col">Estade</th>
-
+                    <th scope="col">State</th>
                 </tr>
-            </thead>
-            <tbody>
+              </thead>
+             <tbody>
                 <?php
                   while($user_data = mysqli_fetch_assoc($resulti)){
                       echo "<tr>";
@@ -66,6 +65,7 @@ $sql = "SELECT *FROM formfinal ORDER BY id DESC";
                       echo "<td>".$user_data['pergunta3']."</td>";
                       echo "<td>".$user_data['pergunta4']."</td>";
                       echo "<td>".$user_data['pergunta5']."</td>";
+                      echo "<td>".$user_data['zipcode']."</td>";
                       echo "<td>".$user_data['rua']."</td>";
                       echo "<td>".$user_data['cidade']."</td>";
                       echo "<td>".$user_data['estado']."</td>";
