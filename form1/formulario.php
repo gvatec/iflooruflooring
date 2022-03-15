@@ -144,14 +144,14 @@ if(isset($_POST['submit'])){
       <div class="step step-6">
           <h2>Your Address</h2>
           <div class="form-group">
-             <input placeholder="Street" type="text" name="rua" id="rua" required><br>
-             <input  placeholder="Zipcode" type="text" name="zipcode" id="zipcode"><br>
-             <input  placeholder="City"type="text" name="cidade" id="cidade"><br>    
-             <input   placeholder="Estade"type="text" name="estado" id="estado">
+             <input placeholder="Street" type="text" name="rua" id="rua" class="reqeuired"><br>
+             <input  placeholder="Zipcode" type="text" name="zipcode" id="zipcode"class="reqeuired"><br>
+             <input  placeholder="City"type="text" name="cidade" id="cidade"class="reqeuired"><br>    
+             <input   placeholder="Estade"type="text" name="estado" id="estado"class="reqeuired">
           </div>
           <div class="btns">
             <button type="button" class="previous-btn">Prev</button>
-            <button type="button" class="next-btn">Next</button>
+            <button type="button" id="requiredbtn" class="next-btn">Next</button>
         </div>
       </div>
        <div class="step step-7">
@@ -168,6 +168,7 @@ if(isset($_POST['submit'])){
            <img style="width:30px;height:30px;" src="https://img.icons8.com/ios-filled/50/4a90e2/phonelink-ring--v1.png"/>
            <input placeholder="Phone" type="tel" name="tel" id="tel">
            </div>
+           <button type="button" class="previous-btn">Prev</button>
            <button type="submit" name="submit" id="submit" class="submit-btn">Submit</button>
        </div>
     </form>

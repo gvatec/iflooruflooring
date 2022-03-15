@@ -14,6 +14,23 @@ prevBtn.forEach((button) => {
   });
 });
 
+const rua = document.getElementById('rua')
+const zipcode = document.getElementById('zipcode')
+const cidade = document.getElementById('cidade')
+const estado = document.getElementById('estado')
+
+const requiredbtn = document.getElementById('requiredbtn')
+requiredbtn.addEventListener('click', requeridfunction)
+function requeridfunction() {
+  if (rua.value == "" || zipcode.value == "" || cidade.value == "" || estado.value == "") {
+    window.alert('Preencha todos os campos')
+    steps[5].classList.add("active")
+    steps[6].classList.remove("active")
+  } else {
+    steps[6].classList.add("active")
+  }
+}
+
 function changeStep(btn) {
   let index = 0;
   const active = document.querySelector(".active");
@@ -26,3 +43,4 @@ function changeStep(btn) {
   }
   steps[index].classList.add("active");
 }
+
